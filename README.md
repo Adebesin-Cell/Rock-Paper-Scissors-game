@@ -30,7 +30,7 @@ Users should be able to:
 ### Links
 
 - Solution URL: [https://github.com/Adebesin-Cell/Rock-Paper-Scissors-game](https://github.com/Adebesin-Cell/Rock-Paper-Scissors-game)
-- Live Site URL: [https://github.com/Adebesin-Cell/Rock-Paper-Scissors-game](https://rock-paper-sci-game.netlify.app/)
+- Live Site URL: [https://rock-paper-sci-game.netlify.app/](https://rock-paper-sci-game.netlify.app/)
 
 ## My process
 
