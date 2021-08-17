@@ -1,0 +1,133 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <!-- displays site properly based on user's device -->
+
+    <link
+      rel="icon"
+      type="image/png"
+      sizes="32x32"
+      href="./images/favicon-32x32.png"
+    />
+    <link rel="stylesheet" href="css/styles.css" />
+
+    <title>Frontend Mentor | Rock, Paper, Scissors</title>
+    <script defer src="Js/App.js"></script>
+
+    <!-- Feel free to remove these styles or customise in your own stylesheet 👍 -->
+    <style>
+      .attribution {
+        font-size: 11px;
+        text-align: center;
+      }
+      .attribution a {
+        color: hsl(228, 45%, 44%);
+      }
+    </style>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <div class="header__logo">
+          <img
+            src="./images/logo.svg"
+            alt="Rock, Paper, Scissors"
+            class="logo"
+          />
+        </div>
+        <div class="header__scoreboard">
+          <p class="title">Score</p>
+          <h1 class="score">12</h1>
+        </div>
+      </div>
+      <div class="game">
+        <div class="game__board">
+          <button class="game__choice game__choice--1" data-choice="paper">
+            <div class="inner__choice">
+              <img
+                src="./images/icon-paper.svg"
+                alt="paper"
+                class="game__image"
+              />
+            </div>
+          </button>
+          <button class="game__choice game__choice--2" data-choice="scissors">
+            <div class="inner__choice">
+              <img
+                src="./images/icon-scissors.svg"
+                alt="scissors"
+                class="game__image"
+              />
+            </div>
+          </button>
+          <button class="game__choice game__choice--3" data-choice="rock">
+            <div class="inner__choice">
+              <img
+                src="./images/icon-rock.svg"
+                alt="rock"
+                class="game__image"
+              />
+            </div>
+          </button>
+        </div>
+        <div class="result result--hidden">
+          <div class="result__board">
+            <div class="player">
+              <div class="player__board">
+                <h1 class="player__title">You Picked</h1>
+                <div class="player--choice__container">
+                  <!-- <button
+                  class="player__choice player__choice--scissors"
+                  data-result="scissors"
+                >
+                  <div class="inner__choice">
+                    <img
+                      src="./images/icon-scissors.svg"
+                      alt="scissors"
+                      class="game__image"
+                    />
+                  </div>
+                </button> -->
+                </div>
+              </div>
+            </div>
+
+            <div class="action hidden">
+              <div class="action__board">
+                <h1 class="action__header">Draw!</h1>
+                <button class="action__btn">Play Again</button>
+              </div>
+            </div>
+
+            <div class="computer">
+              <div class="computer__board">
+                <h1 class="computer__title">The House Picked</h1>
+                <div class="placeholder hide">&nbsp;</div>
+                <div class="computer--choice__container">
+                  <!-- <button
+                  class="computer__choice computer__choice--scissors shown"
+                  data-result="scissors"
+                >
+                  <div class="inner__choice">
+                    <img
+                      src="./images/icon-scissors.svg"
+                      alt="scissors"
+                      class="game__image"
+                    />
+                  </div>
+                </button> -->
+                </div>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <!-- <div class="attribution">
+    Challenge by <a href="https://www.frontendmentor.io?ref=challenge" target="_blank">Frontend Mentor</a>. 
+    Coded by <a href="#">Your Name Here</a>.
+  </div> -->
+  </body>
+</html>
