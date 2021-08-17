@@ -40,7 +40,7 @@ Users should be able to:
 - CSS / SCSS
 - Flexbox
 - Desktop-first workflow
-- Javascript
+- Javascript (No Framework / Libarary)
 
 ### Continued development
 
