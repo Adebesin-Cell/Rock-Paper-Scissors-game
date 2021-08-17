@@ -25,12 +25,12 @@ Users should be able to:
 
 ### Screenshot
 
-![](../images/screenshot.jpg)
+![../images/screenshot.jpg](../images/screenshot.jpg)
 
 ### Links
 
-- Solution URL: [Add solution URL here](https://github.com/Adebesin-Cell/Rock-Paper-Scissors-game)
-- Live Site URL: [Add live site URL here](https://rock-paper-sci-game.netlify.app/)
+- Solution URL: [https://github.com/Adebesin-Cell/Rock-Paper-Scissors-game](https://github.com/Adebesin-Cell/Rock-Paper-Scissors-game)
+- Live Site URL: [https://github.com/Adebesin-Cell/Rock-Paper-Scissors-game](https://rock-paper-sci-game.netlify.app/)
 
 ## My process
 
@@ -50,5 +50,5 @@ Use this section to outline areas that you want to continue focusing on in futur
 
 ## Author
 
-- Frontend Mentor - [@yourusername](https://www.frontendmentor.io/profile/Adebesin-Cell)
-- Twitter - [@yourusername](https://twitter.com/Emmanue21243400)
+- Frontend Mentor - [https://www.frontendmentor.io/profile/Adebesin-Cell](https://www.frontendmentor.io/profile/Adebesin-Cell)
+- Twitter - [https://twitter.com/Emmanue21243400](https://twitter.com/Emmanue21243400)
