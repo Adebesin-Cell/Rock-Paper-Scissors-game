@@ -1,6 +1,12 @@
 .container {
   max-width: 780px;
   margin: 0 auto;
+  @media only screen and (max-width: 768px) {
+    padding: 0 30px;
+  }
+  @media only screen and (max-width: 600px) {
+    padding: 0 15px;
+  }
 }
 
 .header {
@@ -16,10 +22,17 @@
       display: block;
       width: 100%;
     }
+    @media only screen and (max-width: 600px) {
+      width: 150px;
+    }
   }
 
   &__scoreboard {
     width: 150px;
+    @media only screen and (max-width: 600px) {
+      width: 100px;
+      height: 100px;
+    }
     border-radius: 10px;
     background-image: linear-gradient(180deg, #fffffe, #f4f4f4);
 
@@ -90,6 +103,11 @@
     display: grid;
     place-items: center;
 
+    @media only screen and (max-width: 600px) {
+      width: 150px;
+      height: 150px;
+    }
+
     &--1 {
       background: hsl(230, 89%, 65%);
       border-bottom: 10px solid hsl(230, 89%, 62%);
@@ -105,6 +123,14 @@
       margin: 0 auto;
     }
   }
+
+  &__image {
+    display: block;
+    @media only screen and (max-width: 600px) {
+      width: 50px;
+      height: 50px;
+    }
+  }
 }
 
 .inner {
@@ -117,6 +143,10 @@
     display: flex;
     align-items: center;
     justify-content: center;
+    @media only screen and (max-width: 600px) {
+      width: 85px;
+      height: 85px;
+    }
   }
 }
 
@@ -145,6 +175,10 @@
     font-weight: 600;
     padding-bottom: 40px;
     text-align: center;
+    @media only screen and (max-width: 600px) {
+      font-size: 16px;
+      line-height: 24px;
+    }
   }
   &__choice {
     border: none;
@@ -155,6 +189,10 @@
     display: grid;
     place-items: center;
     border-radius: 50%;
+    @media only screen and (max-width: 600px) {
+      width: 150px;
+      height: 150px;
+    }
 
     &--paper {
       background: hsl(230, 89%, 65%);
@@ -179,6 +217,10 @@
     height: 200px;
     border-radius: 50%;
     background: #182341;
+    @media only screen and (max-width: 600px) {
+      width: 150px;
+      height: 150px;
+    }
 
     &.hide {
       display: none;
@@ -191,6 +233,10 @@
     font-weight: 600;
     padding-bottom: 40px;
     text-align: center;
+    @media only screen and (max-width: 600px) {
+      font-size: 16px;
+      line-height: 24px;
+    }
   }
   &__choice {
     border: none;
@@ -206,6 +252,11 @@
     transition: all 0.3s;
     opacity: 0;
     visibility: hidden;
+
+    @media only screen and (max-width: 600px) {
+      width: 150px;
+      height: 150px;
+    }
 
     &.shown {
       transform: translate(0, 0);
@@ -235,6 +286,14 @@
   transition: all 0.4s;
   transform: translateY(0) scale(1);
 
+  @media only screen and (max-width: 600px) {
+    position: absolute;
+    bottom: -1px;
+    left: 50%;
+    transform: translate(-50%, 1px);
+    padding-bottom: 50px;
+  }
+
   &.hidden {
     display: none;
     transform: translateY(100px) scale(0.5);
@@ -242,9 +301,13 @@
   &__header {
     font-size: 48px;
     font-weight: 700;
-    line-height: 30px;
+    line-height: 54px;
     text-align: center;
     color: #fffffe;
+    @media only screen and (max-width: 600px) {
+      font-size: 36px;
+      line-height: 40px;
+    }
   }
 
   &__btn {
