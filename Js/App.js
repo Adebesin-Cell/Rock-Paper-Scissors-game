@@ -67,7 +67,6 @@ const game = function (cur, cmp) {
   if (cur === "paper" && cmp === "scissors") {
     resultText.textContent = "You Lose";
     score--;
-
     if (score < 1) score = 0;
     setTimeout(function () {
       scoreEL.textContent = score;
@@ -85,15 +84,15 @@ const game = function (cur, cmp) {
   if (cur === "scissors" && cmp === "scissors") {
     resultText.textContent = "Draw!";
   } else if (cur === "scissors" && cmp === "rock") {
-    resultText.textContent = "You Win";
-    score++;
+    resultText.textContent = "You Lose";
+    score--;
+    if (score < 1) score = 0;
     setTimeout(function () {
       scoreEL.textContent = score;
     }, time * 1000);
   } else if (cur === "scissors" && cmp === "paper") {
-    resultText.textContent = "You Lose";
-    score--;
-    if (score < 1) score = 0;
+    resultText.textContent = "You Win";
+    score++;
     setTimeout(function () {
       scoreEL.textContent = score;
     }, time * 1000);
