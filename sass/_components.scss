@@ -1,11 +1,14 @@
 .container {
   max-width: 780px;
   margin: 0 auto;
+
   @media only screen and (max-width: 768px) {
     padding: 0 30px;
   }
   @media only screen and (max-width: 600px) {
+    position: relative;
     padding: 0 15px;
+    height: 120vh;
   }
 }
 
@@ -288,7 +291,7 @@
 
   @media only screen and (max-width: 600px) {
     position: absolute;
-    bottom: -1px;
+    bottom: 100px;
     left: 50%;
     transform: translate(-50%, 1px);
     padding-bottom: 50px;
@@ -321,5 +324,100 @@
     text-align: center;
     width: 200px;
     border-radius: 10px;
+  }
+}
+
+.rules {
+  &__btn {
+    position: absolute;
+    right: 40px;
+    bottom: 40px;
+    cursor: pointer;
+    padding: 10px 20px;
+    width: 150px;
+    height: 43.5px;
+    border: 2.5px solid hsl(217, 16%, 45%);
+    outline: none;
+    background: transparent;
+    border-radius: 10px;
+
+    font-size: 16px;
+    font-weight: 700;
+    line-height: 24px;
+    color: #fffffe;
+    text-align: center;
+
+    @media only screen and (max-width: 600px) {
+      margin-top: 70px;
+      right: 30%;
+      bottom: 0;
+      margin-bottom: 30px;
+    }
+  }
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  top: 0;
+  z-index: 2;
+  left: 0;
+  &.hidden {
+    display: none;
+  }
+}
+
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+  transform: translate(-50%, -50%) scale(1);
+  background: hsl(0, 0%, 100%);
+  transition: all 0.3s;
+  border-radius: 15px;
+  @media only screen and (max-width: 600px) {
+    width: 250px;
+  }
+
+  &__body {
+    padding: 40px;
+    @media only screen and (max-width: 600px) {
+      padding: 20px;
+    }
+  }
+  &__btn {
+    cursor: pointer;
+  }
+  &__header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding-bottom: 20px;
+  }
+
+  &__image {
+    display: block;
+    width: 100%;
+  }
+
+  &__heading {
+    font-size: 36px;
+    line-height: 40px;
+    font-weight: 700;
+    color: hsl(229, 25%, 31%);
+    @media only screen and (max-width: 600px) {
+      font-size: 18px;
+      line-height: 24px;
+    }
+  }
+
+  &.hidden {
+    transform: translate(-50%, -50%) scale(0.5);
+    transition: all 0.3s;
+    opacity: 0;
+    visibility: hidden;
   }
 }

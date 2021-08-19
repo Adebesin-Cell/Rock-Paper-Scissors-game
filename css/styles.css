@@ -31,7 +31,9 @@ body {
 
 @media only screen and (max-width: 600px) {
   .container {
+    position: relative;
     padding: 0 15px;
+    height: 120vh;
   }
 }
 
@@ -341,7 +343,7 @@ body {
 @media only screen and (max-width: 600px) {
   .action {
     position: absolute;
-    bottom: -1px;
+    bottom: 100px;
     left: 50%;
     transform: translate(-50%, 1px);
     padding-bottom: 50px;
@@ -379,5 +381,111 @@ body {
   text-align: center;
   width: 200px;
   border-radius: 10px;
+}
+
+.rules__btn {
+  position: absolute;
+  right: 40px;
+  bottom: 40px;
+  cursor: pointer;
+  padding: 10px 20px;
+  width: 150px;
+  height: 43.5px;
+  border: 2.5px solid #606e85;
+  outline: none;
+  background: transparent;
+  border-radius: 10px;
+  font-size: 16px;
+  font-weight: 700;
+  line-height: 24px;
+  color: #fffffe;
+  text-align: center;
+}
+
+@media only screen and (max-width: 600px) {
+  .rules__btn {
+    margin-top: 70px;
+    right: 30%;
+    bottom: 0;
+    margin-bottom: 30px;
+  }
+}
+
+.overlay {
+  position: absolute;
+  width: 100%;
+  height: 100%;
+  background: rgba(0, 0, 0, 0.8);
+  top: 0;
+  z-index: 2;
+  left: 0;
+}
+
+.overlay.hidden {
+  display: none;
+}
+
+.modal {
+  position: absolute;
+  left: 50%;
+  top: 50%;
+  z-index: 2;
+  transform: translate(-50%, -50%) scale(1);
+  background: white;
+  transition: all 0.3s;
+  border-radius: 15px;
+}
+
+@media only screen and (max-width: 600px) {
+  .modal {
+    width: 250px;
+  }
+}
+
+.modal__body {
+  padding: 40px;
+}
+
+@media only screen and (max-width: 600px) {
+  .modal__body {
+    padding: 20px;
+  }
+}
+
+.modal__btn {
+  cursor: pointer;
+}
+
+.modal__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding-bottom: 20px;
+}
+
+.modal__image {
+  display: block;
+  width: 100%;
+}
+
+.modal__heading {
+  font-size: 36px;
+  line-height: 40px;
+  font-weight: 700;
+  color: #3b4363;
+}
+
+@media only screen and (max-width: 600px) {
+  .modal__heading {
+    font-size: 18px;
+    line-height: 24px;
+  }
+}
+
+.modal.hidden {
+  transform: translate(-50%, -50%) scale(0.5);
+  transition: all 0.3s;
+  opacity: 0;
+  visibility: hidden;
 }
 /*# sourceMappingURL=styles.css.map */

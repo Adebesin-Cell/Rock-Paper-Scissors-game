@@ -1,4 +1,8 @@
 // console.log("App Started");
+const modalBtn = document.querySelector(".rules__btn");
+const overlay = document.querySelector(".overlay");
+const modal = document.querySelector(".modal");
+const closeBtn = document.querySelector(".modal__btn--close");
 
 const gameBoard = document.querySelector(".game__board");
 const scoreEL = document.querySelector(".score");
@@ -16,6 +20,21 @@ const resultText = document.querySelector(".action__header");
 const computerChoiceContainer = document.querySelector(
   ".computer--choice__container"
 );
+
+const closeModal = function () {
+  overlay.classList.add("hidden");
+  modal.classList.add("hidden");
+};
+
+overlay.addEventListener("click", closeModal);
+
+modalBtn.addEventListener("click", function () {
+  console.log("click");
+  overlay.classList.remove("hidden");
+  modal.classList.remove("hidden");
+});
+
+closeBtn.addEventListener("click", closeModal);
 
 const time = 2.5;
 
