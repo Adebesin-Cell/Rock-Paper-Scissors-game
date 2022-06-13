@@ -181,9 +181,8 @@ window.addEventListener("load", function () {
 
   if (!data) return 0;
 
-  console.log(+data);
-
   scoreEL.textContent = data;
+  score = data;
 });
 
 resetBtn.addEventListener("click", playAgain);
