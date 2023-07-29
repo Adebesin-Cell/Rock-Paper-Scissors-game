@@ -67,7 +67,7 @@ const game = function (cur, cmp) {
            class="game__image"
          />
        </div>
-     </button>;`;
+     </button>`;
 
   let compMarkup = `
     <button
@@ -81,7 +81,7 @@ const game = function (cur, cmp) {
            class="game__image"
          />
        </div>
-     </button>;`;
+     </button>`;
 
   if (cur === "paper" && cmp === "scissors") {
     resultText.textContent = "You Lose";
